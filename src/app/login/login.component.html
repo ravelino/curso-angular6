@@ -1,0 +1,12 @@
+<form [formGroup]="formLogin" (ngSubmit)="auth()">
+    <div class="form-group">
+      <label>Login</label>
+      <input type="text" class="form-control" formControlName="name" placeholder="Login">
+    </div>
+    <div class="form-group">
+      <label>Senha</label>
+      <input type="password" class="form-control" formControlName="password" placeholder="Senha">
+    </div>
+    
+    <button type="submit" class="btn btn-primary" [disabled]="!formLogin.valid">Acessar</button>
+  </form>

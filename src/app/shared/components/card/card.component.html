@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{people.photo}}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{people.name | uppercase}}</h5>
+    <p class="card-text">{{people.description  | uppercase}}</p>
+    
+    <button class="btn btn-primary" (click)="sendPeople()">Evniar</button>
+  </div>
+</div>
